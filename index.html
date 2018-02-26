@@ -19,7 +19,10 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-5" id="computerScore">Computer Score</div>
+                <div class="col-md-5 computer">
+                    <div>Computer Score</div>
+                    <div id="computerScore"></div>
+                </div>
                 <div class="col-md-2" id="images"></div>
                     <div class="crystals">
                     <button class="crystal" id="blue"><img src="assets/images/blueCrystal.jpg" class="image" alt="blue crystal"></button>
@@ -27,14 +30,23 @@
                     <button class="crystal" id="yellow" ><img src="assets/images/yellowCrystal.jpg" class="image" alt="yellow crystal"></button>
                     <button class="crystal" id="purple"><img src="assets/images/purpleCrystal.jpg"  class="image" alt="purple crystal"></button>
                     </div>
-                <div class="col-md-5 center-block" id="userScore">Your Score</div>
+                <div class="col-md-5 center-block user">
+                    <div>Your Score</div>
+                    <div id="userScore"></div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8"></div>
                     <div class="row score">
-                        <div class="col-md-3" id="wins">Wins</div>
-                        <div class="col-md-3" id="losses">Losses</div>
+                        <div class="col-md-3">
+                            <div>Wins</div>
+                            <div id="wins"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div>Losses</div>
+                            <div id="losses"></div>
+                        </div>
                     </div>
                 <div class="col-md-2"></div>
             </div>
