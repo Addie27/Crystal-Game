@@ -2,10 +2,15 @@ body {
     font-family: 'Cabin Sketch', cursive;
 }
 
+.container {
+    align-items: center;
+    margin: auto;
+    width: 50%; 
+}
+
 h1 {
     text-align: center;
-    font-size: 60px; 
-    
+    font-size: 60px;  
 }
 
 #rules {
@@ -22,22 +27,47 @@ h1 {
     font-size: 25px; 
     text-align: center; 
     border: 1px solid black;
-    height: 250px;
-    width: 200px; 
+    height: 220px;
+    width: 225px; 
+    margin-top: 10px; 
+    float: left; 
 }
 
-.row {
-    float: none; 
-    margin: 0 auto; 
-    text-align: center; 
+button {
+    margin-top: 0;
+    
 }
 
 .image {
-    height: 100px;
-    width: 100px; 
+    height: 75px;
+   
 }
 
-.score {
-    padding-top: 20px;
-    text-align: center; 
+#images {
+    margin-top: 10px; 
+    padding: 20px; 
+    float: left; 
 }
+
+.winlosebox {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px; 
+    font-size: 15px; 
+    margin-bottom: 1px; 
+    text-align: center;
+    margin-top: 10px;  
+    float: left; 
+}
+
+#computerScore, #userScore {
+    padding-top: 50px; 
+}
+
+@media screen and (max-width: 1300px) {
+    .user, .winlosebox {
+        position: relative;
+        left: 20px; 
+       
+    }
+    }
