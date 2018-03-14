@@ -16,11 +16,15 @@ h1 {
 #rules {
     font-size: 20px; 
     text-align: center;
-    position: relative; 
-    width: 800px; 
     margin-left: auto;
     margin-right: auto; 
 
+}
+
+.page-header {
+    width: 75%; 
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .computer, .user{
@@ -30,7 +34,7 @@ h1 {
     height: 220px;
     width: 225px; 
     margin-top: 10px; 
-    float: left; 
+    
 }
 
 button {
@@ -44,9 +48,9 @@ button {
 }
 
 #images {
-    margin-top: 10px; 
-    padding: 20px; 
-    float: left; 
+    margin-top: 10px;
+    padding-right: 5px;  
+    margin-right: 0;
 }
 
 .winlosebox {
@@ -57,17 +61,78 @@ button {
     margin-bottom: 1px; 
     text-align: center;
     margin-top: 10px;  
-    float: left; 
 }
 
 #computerScore, #userScore {
     padding-top: 50px; 
 }
 
-@media screen and (max-width: 1300px) {
-    .user, .winlosebox {
-        position: relative;
-        left: 20px; 
-       
+@media screen and (max-width: 1400px) {
+    .container {
+        margin: auto; 
+        width: 100%; 
     }
+
+    .user { 
+        padding-right: 0; 
+        padding-left: 5px; 
     }
+
+    .winlosebox {
+        height: 80px;
+        width: 80px; 
+        font-size: 15px;  
+        margin-top: 10px; 
+    }
+
+    .computer, .user{
+        font-size: 20px;
+        height: 200px;
+        width: 220px; 
+        
+    }
+
+    .thisrow {
+        width:50%; 
+        margin: auto !important; 
+    }
+}
+
+@media screen and (max-width: 1349px) {
+    .container {
+        margin: 0; 
+        width: 100%; 
+    }
+
+    .computer, #images, .user {
+        margin: 20px; 
+    }
+    .user {
+        margin-left: 0;
+    }
+
+    .thisrow {
+        width: 75%; 
+        margin: 0, auto !important; 
+    }
+
+    .winlosebox { 
+        margin-top: 20px; 
+        margin-right: 0; 
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .thisrow {
+        width: 80%; 
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    .thisrow {
+        width: 85%; 
+    }
+
+}
+
